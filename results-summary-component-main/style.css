@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;  
+}
+.container{
+    width: 35rem;
+    height: 50%;
+    border-radius: 10px 10px 10px 0 ;
+    box-shadow:10px 10px 20px 5px hsl(241, 100%, 89%) ;   
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+.one{   
+    background:linear-gradient(180deg, hsl(252, 100%, 67%) 5%,hsl(241, 81%, 54%)) ;
+    text-align: center;
+    color: white;
+}
+#result{
+    font-size: 14px;
+    color:hsl(241, 100%, 89%);
+}
+#circle{
+    height: 150px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1) 20%,hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+}
+
+.one h3{
+    margin: 0 0 10px 0;
+}
+#p{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: lighter;
+    color:hsl(241, 100%, 89%);   
+}
+#one, #two, #three, #four{
+    display: flex;
+    align-items: center;
+    color:hsl(241, 100%, 89%) ;
+}
+#num{
+    color: hsl(224, 30%, 27%);
+}
+#one{
+    background:hsla(0, 100%, 67%,0.1) ;
+}
+#two{
+    background: hsla(39, 100%, 56%,0.1);
+}
+#three{
+    background: hsla(166, 100%, 37%,0.1);
+}
+#four{
+    background: hsla(234, 85%, 45%,0.1);
+}
+#one .first{
+    color: hsl(0, 100%, 67%);
+}
+#two .first{
+    color: hsl(39, 100%, 56%);
+}
+#three .first{
+    color: hsl(166, 100%, 37%);
+}
+#four .first{
+    color: hsl(234, 85%, 45%);
+}
+.first{
+    width: 70%;
+    display: flex;
+    padding: 0 0 0 5px;
+}
+button{
+    margin: 20px 10px 10px 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 95%;
+    color: white;
+    background:hsl(224, 30%, 27%) ;
+}
+
+@media only screen and (1440px <= width) {
+    body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;    
+    }
+    .one{
+        width: 50%;
+        border-radius: 10px;
+    }
+    #result{
+        margin: 20px 0 30px 0;
+    }
+    #circle{
+        margin: 0 20% 20px 20%;
+    }
+    #circle h1{
+        margin: 2rem 0 0 0;
+        padding: 30px 0 0 0;
+        font-weight:800;
+        font-size: 50px;
+    }
+    
+    #circle p{
+        font-size: 15px;
+        color:hsl(241, 100%, 89%);
+    }
+    .two h4{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    #one, #two, #three, #four{
+        border-radius:10px ;
+        height: 40px;
+        margin: 0 15px 10px 0;
+    }
+    .two{
+        width: 50%;
+        margin: 0 20px;
+    }
+}
+@media only screen and (800px <= width <= 1440px) {
+    body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;    
+    }
+    .one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        border-radius: 10px;
+    }
+    #result{
+        margin: 10px 0 15px 0;
+    }
+    #circle{
+        width: 100px;
+        height: 100px;
+        margin:5px 0 5px 0;
+    }
+    #circle h1{
+        margin: 10px 0 0 0;
+        font-weight:800;
+        font-size: 40px;
+    }
+    
+    #circle p{
+        font-size: 15px;
+        color:hsl(241, 100%, 89%);
+    }
+    #p{
+        font-size: 15px;
+    }
+    .two h4{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    #one, #two, #three, #four{
+        border-radius:10px ;
+        height: 30px;
+        margin: 0 15px 5px 0;
+    }
+    .two{
+        width: 50%;
+        margin: 0 20px;
+    }
+}
+@media only screen and (width <= 600px){
+    body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+    }
+    
+    .one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        border-radius: 0 0 30px 30px;
+    }
+    #result{
+        margin: 10px 0 10px 0;
+    
+    }
+    #circle{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+    #circle h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #p{
+        margin: 0 0 10px 0;
+        font-size: 15px;
+    }
+    .two{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .two{
+        align-items: center;
+        justify-content: center;
+    }
+    .two h4{
+        margin: 5px 0 ;
+        font-size: 20px;
+    }
+    #one, #two, #three, #four{
+        border-radius:10px ;
+        height: 40px;
+        align-items: center;
+        width: 200px;
+        margin: 0 0 10px 0;
+    }
+    button{
+        width: 200px;
+        margin-bottom:15px;
+    }
+    .attribution{
+        text-align: center;
+    }
+}
+@media only screen and (600px <= width <= 800px){
+    body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 100vh;
+    }
+    
+    .one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        border-radius: 0 0 30px 30px;
+    }
+    #result{
+        margin: 10px 0 10px 0;
+    
+    }
+    #circle{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+    #circle h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #p{
+        margin: 0 5px 10px 5px;
+        font-size: 20px;
+    }
+    .two{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .two{
+        align-items: center;
+        justify-content: center;
+    }
+    .two h4{
+        margin: 5px 0 ;
+        font-size: 20px;
+    }
+    #one, #two, #three, #four{
+        border-radius:10px ;
+        height: 40px;
+        align-items: center;
+        width: 300px;
+        margin: 0 0 10px 0;
+    }
+    button{
+        width: 200px;
+        margin-bottom:15px;
+    }
+    .attribution{
+        text-align: center;
+    }
+}
